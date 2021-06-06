@@ -11,7 +11,7 @@ public class ManagerTaskListAndShowTest extends AcmeOneTest{
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/task/list-all.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void listAll(final int recordIndex, final String title, final String startTime, final String endTime, final String workload,
+	public void listAllTest(final int recordIndex, final String title, final String startTime, final String endTime, final String workload,
 		final String description, final String info) {
 		
 		super.signIn("manager1", "manager1");

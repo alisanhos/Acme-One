@@ -16,7 +16,7 @@ public class AdministratorDashboardShowTest extends AcmeOneTest{
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/dashboard/show.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void show(final String averageNumberOfJobsPerEmployer,final String averageNumberOfApplicationsPerWorker,//
+	public void listAllTest(final String averageNumberOfJobsPerEmployer,final String averageNumberOfApplicationsPerWorker,//
 		final String averageNumberOfApplicationsPerEmployer, final String numberOfTasksPublic,//
 		final String numberOfTasksPrivate, final String numberOfTasksFinished,//
 		final String numberOfTasksUnfinished, final String averageWorkload, final String deviationWorkload,//

@@ -15,7 +15,7 @@ public class ManagerTaskCreateTest extends AcmeOneTest{
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/task/createPositive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void createPositiveIsPublic(final int recordIndex, final String title, final String startTime, final String endTime, final String workload,
+	public void createPositiveIsPublicTest(final int recordIndex, final String title, final String startTime, final String endTime, final String workload,
 									final String description, final String info) {
 		this.navigateHome();
 		super.signIn("manager1", "manager1");
@@ -54,7 +54,7 @@ public class ManagerTaskCreateTest extends AcmeOneTest{
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/task/createPositive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void createPositiveIsPrivate(final int recordIndex, final String title, final String startTime, final String endTime, final String workload,
+	public void createPositiveIsPrivateTest(final int recordIndex, final String title, final String startTime, final String endTime, final String workload,
 									final String description, final String info) {
 		this.navigateHome();
 		super.signIn("manager1", "manager1");
@@ -92,7 +92,7 @@ public class ManagerTaskCreateTest extends AcmeOneTest{
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/task/createNegative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void createNegative(final int recordIndex, final String title, final String startTime, final String endTime, final String workload,
+	public void createNegativeTest(final int recordIndex, final String title, final String startTime, final String endTime, final String workload,
 									final String description, final String info) {
 		
 		this.navigateHome();
