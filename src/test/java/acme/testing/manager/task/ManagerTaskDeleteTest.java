@@ -15,7 +15,7 @@ public class ManagerTaskDeleteTest extends AcmeOneTest{
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/task/delete.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void delete(final int recordIndex) {
+	public void deleteTest(final int recordIndex) {
 		this.navigateHome();
 		super.signIn("manager1", "manager1");
 		

@@ -15,7 +15,7 @@ public class ManagerTaskUpdateTest extends AcmeOneTest{
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/task/updatePositive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void updatePositive(final int recordIndex, final String title, final String startTime, final String endTime, final String workload,
+	public void updatePositiveTest(final int recordIndex, final String title, final String startTime, final String endTime, final String workload,
 									final String description, final String info) {
 		this.navigateHome();
 		super.signIn("manager1", "manager1");
@@ -56,7 +56,7 @@ public class ManagerTaskUpdateTest extends AcmeOneTest{
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/task/updateNegative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void updateNegative(final int recordIndex, final String title, final String startTime, final String endTime, final String workload,
+	public void updateNegativeTest(final int recordIndex, final String title, final String startTime, final String endTime, final String workload,
 									final String description, final String info) {
 		
 		this.navigateHome();

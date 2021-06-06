@@ -15,7 +15,7 @@ public class AdministratorConfigurationUpdateTest extends AcmeOneTest {
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/configuration/update-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void updatePositiveTests(final int recordIndex, final String words, final String threshold, final String language) {
+	public void updatePositiveTest(final int recordIndex, final String words, final String threshold, final String language) {
 		super.signIn("administrator", "administrator");
 		
 		super.clickOnMenu("Administrator", "Configuration");
@@ -40,7 +40,7 @@ public class AdministratorConfigurationUpdateTest extends AcmeOneTest {
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/configuration/update-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(20)
-	public void updateNegativeTests(final int recordIndex, final String words, final String threshold, final String language) {
+	public void updateNegativeTest(final int recordIndex, final String words, final String threshold, final String language) {
 		super.signIn("administrator", "administrator");
 		
 		super.clickOnMenu("Administrator", "Configuration");
