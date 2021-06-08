@@ -1,0 +1,5 @@
+timestamp,test-class,test-method,time,description,result
+2021-06-08 21:52:13.382,acme.testing.anonymous.task.AnonymousTaskListAndShowTest,listAndShowTest,3557,"[1] recordIndex=0, title=Play Dark Souls Remastered, startTime=2022/06/30 11:20, endTime=2022/06/30 15:20, workload=2.50, description=I love the reign of Lordran, info=https://web.archive.org/web/20110205223704/http://www.fromsoftware.jp/darksouls/, isPublic=true, manager=manager1Manager",OK
+2021-06-08 21:52:16.424,acme.testing.anonymous.task.AnonymousTaskListAndShowTest,listAndShowTest,2824,"[2] recordIndex=1, title=Study biology, startTime=2022/06/10 11:30, endTime=2022/06/13 13:00, workload=1.15, description=I'm a mad scientist, info=null, isPublic=true, manager=manager1Manager",OK
+2021-06-08 21:52:17.002,acme.testing.anonymous.task.AnonymousTaskListAndShowTest,listAndShowNegativeTest,348,"[1] ",OK
+2021-06-08 21:52:17.431,acme.testing.anonymous.task.AnonymousTaskListAndShowTest,listAndShowNegativeTest,171,"[2] ",OK
