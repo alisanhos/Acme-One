@@ -48,6 +48,10 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 	
 	private double getAverage(final double original) {
 		
+		if(Double.isNaN(original)) {
+			return 0.0;
+		}
+		
 		final BigDecimal bigDecimal2 = new BigDecimal(String.valueOf(original));
 		
 		final int intValue2 = bigDecimal2.intValue();
