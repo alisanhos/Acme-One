@@ -81,8 +81,10 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 			
 			final int intValue = bigDecimal.intValue();
 			final double decimalPart = bigDecimal.subtract(new BigDecimal(intValue)).doubleValue();
+			final double unityPart = intValue - decimalPart;
 			
 			errors.state(request, decimalPart < 0.60, "workload", "manager.task.form.error.workload.decimal");
+			errors.state(request, unityPart < 100.0, "workload", "manager.task.form.error.workload.unity");
 			errors.state(request, entity.getWorkload() <= entity.getExecutionPeriodInHours(), "workload", "manager.task.form.error.workload");			
 		}
 				
